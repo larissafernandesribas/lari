@@ -1,0 +1,90 @@
+body { 
+    background: url('https://i.pinimg.com/736x/13/8b/08/138b0800ed24891e646211cbaad2a757.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Spectral', serif; /* Adiciona a fonte Spectral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: black;
+    border: 2px solid white;
+    padding: 30px 40px;
+    width: 70%;
+    max-width: 800px; /* Aumentei o tamanho máximo */
+    height: 500px; /* Deixei o container maior */
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Texto alinhado à esquerda */
+    justify-content: flex-start; /* Texto no topo */
+}
+
+h1 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 1px; /* Reduzi o espaçamento entre o título e o parágrafo */
+    text-align: left;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 10px; /* Espaço entre as imagens */
+    width: 100%;
+    margin-top: 20px; /* Dá um espaçamento do texto para as imagens */
+}
+
+.img-zoom {
+    transition: transform 0.3s ease-in-out; /* Transição suave para o efeito */
+    display: block;
+    width: 45%; /* Limita a largura da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o limite do container */
+    height: auto;
+    border-radius: 20px; /* Arredonda as bordas */
+    object-fit: cover; /* Garante que a imagem ocupe o espaço sem distorcer */
+}
+
+.img-zoom:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px; /* Adiciona um espaçamento entre as imagens e os botões */
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.minitexto {
+    color: white;
+    font-size: 1px;
+    text-align: center;
+}

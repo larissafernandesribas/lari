@@ -1,0 +1,79 @@
+/* Aplica a animação fade-in a todo o container */
+.container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+body { 
+    background-image: url('https://i.pinimg.com/736x/6e/94/fd/6e94fdac46f82f8e800754b0157d7a07.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Deixa a imagem fixa enquanto rola a página */
+    font-family: 'Spectral', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: black;
+    border: 2px solid white;
+    padding: 30px 40px;
+    width: 70%;
+    max-width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative; /* Para posicionar o botão dentro do container */
+}
+
+h1 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Estilizando o botão de voltar */
+.btn-voltar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: gray;
+    color: white;
+}
